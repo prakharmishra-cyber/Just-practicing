@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculatortor</title>
+     <link rel="stylesheet" type="text/css" href="bootstrap.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">  
+     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+     <style type="text/css">
+     	
+     	body{
+
+     		font-family: 'Pacifico', cursive;
+     		background: url(https://images.unsplash.com/photo-1548175551-1edaea7bbf0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+     		background-repeat: no-repeat;
+     		background-size: cover;
+     	}
+     	.my-class{
+
+     		background: #656c78;
+
+     	}
+     	.asa{
+     		border: 2px solid black;
+  			border-radius: 5px;
+     	}
+     </style>
+
+</head>
+<body>
+
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Calculator</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Go To</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Disabled</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+			
+<div   class="container">
+
+
+	<div class="row">
+		<div class="col-lg-4 pt-4 pl-4 ">
+			<div class="container  my-class asa">
+				<form name="calculator">
+
+	<div class="row pt-3">
+		
+		<div class="col-lg-12">
+			<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-default">Digits</span>
+  </div>
+  <input type="text" class="form-control" aria-label="Default" name="display" id="display" disabled aria-describedby="inputGroup-sizing-default">
+</div>
+		</div>
+
+	</div>
+		<div class="row pt-2">
+			<div class="col-lg-8 pr-1">
+				<div class="input-group mb-3">
+  				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="clear" value="Clear" onclick="calculator.display.value = ''" aria-label="" aria-describedby="basic-addon1">
+				</div>
+			</div>
+			<div class="col-lg-4">
+			<button type="button" class="btn btn-dark btn-lg btn-block">Del</button>
+			</div>
+
+		</div>
+		<div class="row pt-2">
+			<div class="col-lg-3">
+				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="nine" value="9" onclick="calculator.display.value += '9'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+			<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="eight" value="8" onclick="calculator.display.value += '8'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+			<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="seven" value="7" onclick="calculator.display.value += '7'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="div" value="/" onclick="calculator.display.value += '/'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+		</div>
+
+
+
+		<div class="row pt-2">
+			<div class="col-lg-3">
+				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="four" value="4" onclick="calculator.display.value += '4'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+			<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="five" value="5" onclick="calculator.display.value += '5'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+			<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="six" value="6" onclick="calculator.display.value += '6'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="time" value="X" onclick="calculator.display.value += '*'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+		</div>
+
+
+
+		<div class="row pt-2">
+			<div class="col-lg-3">
+			<div class="input-group mb-3">
+  				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="one" value="1" onclick="calculator.display.value += '1'" aria-label="" aria-describedby="basic-addon1">
+				</div>
+			</div>
+			<div class="col-lg-3">
+			<div class="input-group mb-3">
+  				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="two" value="2" onclick="calculator.display.value += '2'" aria-label="" aria-describedby="basic-addon1">
+				</div>
+			</div>
+			<div class="col-lg-3">
+			<div class="input-group mb-3">
+  				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="three" value="3" onclick="calculator.display.value += '3'" aria-label="" aria-describedby="basic-addon1">
+				</div>
+			</div>
+			<div class="col-lg-3">
+				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="minus" value="-" onclick="calculator.display.value += '-'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+		</div>
+
+
+
+		<div class="row pt-2 pb-2">
+			<div class="col-lg-3">
+				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="dot" value="." onclick="calculator.display.value += '.'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+			<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="zero" value="0" onclick="calculator.display.value += '0'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+			<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="doit" value="=" onclick="calculator.display.value=eval(calculator.display.value)" aria-label="" aria-describedby="basic-addon1">
+			</div>
+			<div class="col-lg-3">
+				<input type="text" class="form-control btn btn-dark btn-lg btn-block" placeholder="" name="plus" value="+" onclick="calculator.display.value += '+'" aria-label="" aria-describedby="basic-addon1">
+			</div>
+		</div>
+	</form>
+	</div>
+  
+</div>
+
+  			<div  class="col-lg-8 pt-4">
+  				
+  				<div class="jumbotron">
+  <h1 class="display-4">Hello, Innovators</h1>
+  <p class="lead">This is a simple calculator program,my name is Prakhar Mishra and I am learning Web Development for quite a few time.</p>
+  <hr class="my-4">
+  <p>Please don't Forget to rate my first creation.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="#" role="button">My details</a>
+  </p>
+</div>
+  			</div>
+</div>
+	</div>
+		<script src="https://code.jquery.com/jquery-3.5.0.js"integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="crossorigin="anonymous"></script>
+		<script type="text/javascript" src="bootstrap.js"></script>
+</body>
+</html>
